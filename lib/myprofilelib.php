@@ -240,11 +240,11 @@ function core_myprofile_navigation(core_user\output\myprofile\tree $tree, $user,
                             }
                             $linkattributes['class'] = 'dimmed';
                         }
-                        $params = array('id' => $user->id, 'course' => $mycourse->id);
+                        $params = array('id' => $mycourse->id);
                         if ($showallcourses) {
                             $params['showallcourses'] = 1;
                         }
-                        $url = new moodle_url('/user/view.php', $params);
+                        $url = new moodle_url('/course/view.php', $params);
                         $courselisting .= html_writer::tag('li', html_writer::link($url, $ccontext->get_context_name(false),
                                 $linkattributes));
                     } else {
