@@ -87,7 +87,7 @@ class HTMLPurifier_ConfigSchema_ValidatorAtom
     {
         $this->assertIsString();
         if (!ctype_alnum($this->contents)) {
-            $this->error('must be alphanumeric');
+            $this->error('must be alphanumeric such as A-Za-z0-9');
         }
         return $this;
     }

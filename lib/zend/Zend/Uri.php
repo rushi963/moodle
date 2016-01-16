@@ -108,7 +108,7 @@ abstract class Zend_Uri
         // Security check: $scheme is used to load a class file, so only alphanumerics are allowed.
         if (ctype_alnum($scheme) === false) {
             require_once 'Zend/Uri/Exception.php';
-            throw new Zend_Uri_Exception('Illegal scheme supplied, only alphanumeric characters are permitted');
+            throw new Zend_Uri_Exception('Illegal scheme supplied, only alphanumeric characters such as A-Za-z0-9 are permitted');
         }
 
         if ($className === null) {

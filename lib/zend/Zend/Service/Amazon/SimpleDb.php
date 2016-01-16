@@ -435,7 +435,7 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
     public function quoteName($name)
     {
         if (preg_match('/^[a-z_$][a-z0-9_$-]*$/i', $name) == false) {
-            throw new Zend_Service_Amazon_SimpleDb_Exception("Invalid name: can contain only alphanumeric characters, \$ and _");
+            throw new Zend_Service_Amazon_SimpleDb_Exception("Invalid name: can contain only alphanumeric characters such as A-Za-z0-9, \$ and _");
         }
         return "`$name`";
     }

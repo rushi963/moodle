@@ -1206,7 +1206,7 @@ class Zend_Service_Twitter
             require_once 'Zend/Service/Twitter/Exception.php';
             throw new Zend_Service_Twitter_Exception(
                 'Screen name, "' . $name
-                . '" should only contain alphanumeric characters and'
+                . '" should only contain alphanumeric characters such as A-Za-z0-9 and'
                 . ' underscores, and not exceed 15 characters.');
         }
         return $name;
