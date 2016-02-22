@@ -1874,6 +1874,7 @@ $string['turneditingoff'] = 'Turn editing off';
 $string['turneditingon'] = 'Turn editing on';
 $string['unauthorisedlogin'] = 'The user account "{$a}" is not available on this site';
 $string['undecided'] = 'Undecided';
+$string['undochanges'] = 'Undo changes';
 $string['unfinished'] = 'Unfinished';
 $string['unknowncategory'] = 'Unknown category';
 $string['unknownerror'] = 'Unknown error';

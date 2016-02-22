@@ -52,8 +52,11 @@ class user_files_form extends moodleform {
         }
         $mform->setType('returnurl', PARAM_LOCALURL);
 
-        $this->add_action_buttons(true, get_string('savechanges'));
-
+        $buttonarray = array();
+        $buttonarray[] = &$mform->createElement('submit', 'submitbutton', get_string('savechanges'));
+        $buttonarray[] = &$mform->createElement('cancel', 'cancel', get_string('undochanges'));
+        $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
+        $mform->closeHeaderBefore('buttonar');
         $this->set_data($data);
     }
 
